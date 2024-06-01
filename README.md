@@ -68,6 +68,8 @@ python steganography.py hide -i input_image.png -t secret_message.txt -o output_
 
 ## Contributing
 
+While developing this project, I encountered difficulties in seamlessly connecting all the webpages, which led to inefficiencies and increased storage requirements. Therefore, there is potential to optimize the project for improved efficiency and reduced storage footprint. Enhancing the connectivity between webpages and optimizing the storage usage can make the tool more efficient and lightweight. Future iterations of the project will focus on addressing these challenges to enhance usability and resource efficiency.
+
 Contributions are welcome! If you have any ideas for improvements, feature requests, or bug reports, feel free to open an issue or submit a pull request.
 
 
