@@ -1,0 +1,1 @@
+        message = request.form['message']

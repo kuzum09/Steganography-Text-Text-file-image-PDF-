@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Image</title>
+		<style>
+			@font-face {
+				font-family: "font1";
+				src: url("/static/QuartzoBold-W9lv.ttf");
+			}
+
+			body {
+				background-image: url("/static/wallpaper.jpeg");
+				background-size: cover;
+				background-position: center;
+				background-repeat: no-repeat;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 100vh;
+				margin: 0;
+				overflow: hidden;
+				flex-direction: column;
+			}
+			h1 {
+				font-size: 36px;
+				color: #ffffff;
+				font-family: font1;
+			}
+			h1 {
+				font-size: 59px; /* Increased font size */
+				text-align: center; /* Center align */
+				margin-bottom: 30px; /* Increased margin */
+			}
+			/* Style for buttons */
+			.button {
+				display: inline-block;
+				padding: 15px 30px; /* Increased padding */
+				margin: 20px; /* Increased margin */
+				background-color: #007bff; /* Change this to your desired color */
+				color: #ffffff;
+				border: none;
+				border-radius: 5px;
+				text-decoration: none;
+				font-size: 20px; /* Increased font size */
+				cursor: pointer;
+			}
+			a {
+				font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+					sans-serif;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Image Steganography</h1>
+		<!-- Encode Message button -->
+		<a href="/encode" class="button">Encode Message</a>
+		<!-- Decode Message button -->
+		<a href="/decode" class="button">Decode Message</a>
+	</body>
+</html>

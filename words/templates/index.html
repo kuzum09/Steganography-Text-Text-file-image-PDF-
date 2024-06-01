@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>text(words)</title>
+		<style>
+			@font-face {
+				font-family: "font1";
+				src: url("/static/QuartzoBold-W9lv.ttf");
+			}
+			body {
+				background-image: url("/static/wallpaper.jpeg");
+				background-size: cover;
+				background-position: center;
+				background-repeat: no-repeat;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 100vh;
+				margin: 0;
+				overflow: hidden;
+				flex-direction: column;
+
+				color: #ffffff; /* Text color set to white */
+			}
+
+			h1 {
+				font-size: 46px; /* Increased font size */
+				margin-bottom: 20px;
+				font-family: font1; /* Changed font to Arial */
+			}
+
+			form {
+				max-width: 600px;
+				/* margin: 20px auto; Center align the form */
+				padding: 28px;
+				/* background-color: rgba( */
+
+				/* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); Added box shadow for depth */
+				/* text-align: center; */
+			}
+
+			label {
+				display: block;
+				margin-bottom: 0px;
+				font-size: 18px;
+			}
+
+			textarea,
+			input[type="password"],
+			input[type="submit"] {
+				width: 100%;
+				padding: 10px;
+				margin-bottom: 10px;
+				border: 1px solid #141313;
+				border-radius: 5px;
+				box-sizing: border-box;
+				font-size: 16px;
+			}
+
+			input[type="submit"] {
+				background-color: #007bff; /* Button color changed to blue */
+				color: #141212; /* Text color set to white */
+				cursor: pointer;
+				transition: background-color 0.3s ease;
+			}
+
+			input[type="submit"]:hover {
+				background-color: #0056b3; /* Darker shade of blue on hover */
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Word Steganography</h1>
+		<form action="/embed" method="post">
+			<label for="secret_message">Enter Secret Message:</label>
+			<textarea id="secret_message" name="secret_message" rows="5"></textarea>
+			<label for="password">Enter Password:</label>
+			<input type="password" id="password" name="password" />
+			<input type="submit" value="Embed Secret Message" />
+		</form>
+
+		<hr />
+
+		<form action="/reveal" method="post">
+			<label for="stego_text">Enter Stego Text:</label>
+			<textarea id="stego_text" name="stego_text" rows="5"></textarea>
+			<label for="password">Enter Password:</label>
+			<input type="password" id="password" name="password" />
+			<input type="submit" value="Reveal Secret Message" />
+		</form>
+	</body>
+</html>
