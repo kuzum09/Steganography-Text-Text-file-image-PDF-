@@ -10,7 +10,7 @@ Welcome to the "Steganography Tool for Text, Text File, Image, and PDF" reposito
 - [Supported File Types](#supported-file-types)
 - [Features](#features)
 - [Usage](#usage)
-- [Images](#image)
+- [Images](#invisocloak)
 - [Contributing](#contributing)
 
 
@@ -51,19 +51,23 @@ git clone https://github.com/kuzum09/Steganography-Text-Text-file-image-PDF-.git
 ```bash
 python steganography.py hide -i input_image.png -t secret_message.txt -o output_image.png
 ```
-## Image
+## InvisoCloak
 ![Screenshot 2024-05-16 003732](https://github.com/kuzum09/Steganography-Text-Text-file-image-PDF-/assets/126418779/b5173d6a-6849-45a3-8c99-a9e70d4804ed)
 
+## Image Steganography
 ![Screenshot 2024-05-16 003959](https://github.com/kuzum09/Steganography-Text-Text-file-image-PDF-/assets/126418779/cb03f14a-199e-4c3d-ba9b-b04c1df56413)
 
 ![Screenshot 2024-05-16 004121](https://github.com/kuzum09/Steganography-Text-Text-file-image-PDF-/assets/126418779/daa87547-de60-4953-9e0a-662774093697)
 
 ![Screenshot 2024-05-16 004139](https://github.com/kuzum09/Steganography-Text-Text-file-image-PDF-/assets/126418779/866e64f0-6245-4af4-a93a-877906ffdd1c)
 
+## Word Steganography
 ![image](https://github.com/kuzum09/Steganography-Text-Text-file-image-PDF-/assets/126418779/604f0cf1-c751-4348-b2a0-c47c0c9bb412)
 
+## PDF Steganography
 ![Screenshot 2024-05-16 004504](https://github.com/kuzum09/Steganography-Text-Text-file-image-PDF-/assets/126418779/01d2b214-173c-4d4b-96d9-e66990cd2319)
 
+## Text File Steganography
 ![image](https://github.com/kuzum09/Steganography-Text-Text-file-image-PDF-/assets/126418779/e9aee567-0c87-4f85-8971-35e8fd8c4a1a)
 
 ## Contributing
